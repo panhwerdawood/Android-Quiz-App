@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">QuizApp</string>
+    <string name="score_0">Score: 0</string>
+    <string name="question_1_x">Question 1/X</string>
+    <string name="_00_20">00:20</string>
+    <string name="this_is_question_nthis_is_question">This is Question \nThis is Question</string>
+    <string name="submit">Submit</string>
 </resources>

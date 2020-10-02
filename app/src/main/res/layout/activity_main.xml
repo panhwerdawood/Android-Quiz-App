@@ -14,23 +14,15 @@
         android:layout_margin="16dp"
         />
 
-   <!-- <TextView
-        android:id="@+id/quiz"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:text="@string/app_name"
-        android:gravity="center"
-        android:padding="30dp"
-        android:textAllCaps="true"
-        android:textStyle="bold"
-        /> -->
 
     <TextView
         android:id="@+id/highscore"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="My HighScore:- 0"
+        android:background="@drawable/customshape"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:gravity="center"
         android:textSize="20sp"
         android:layout_centerHorizontal="true"
@@ -43,10 +35,13 @@
         android:layout_height="wrap_content"
         android:text="Start"
         android:layout_alignParentBottom="true"
-        android:background="@color/colorPrimary"
-        android:textColor="@android:color/white"
+        android:background="@drawable/customshape"
+        android:textColor="#ffff"
+        android:backgroundTint="@color/colorPrimary"
         android:textStyle="bold"
-        android:textSize="20sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="26dp"
         />
 
 
