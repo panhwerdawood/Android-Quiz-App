@@ -11,14 +11,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:text="Score: 0"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/customshape"
+        android:text="@string/score_0"
         android:textSize="20sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="00:20"
-        android:textSize="25sp"
+        android:text="@string/_00_20"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/customshape"
+        android:textSize="20sp"
         android:layout_centerHorizontal="true"
         android:textColor="@android:color/black"
         android:padding="10dp"
@@ -29,8 +34,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:padding="10dp"
-        android:text="Question  1/X"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/customshape"
         android:textSize="18sp"
+        android:text="@string/question_1_x"
+        android:layout_marginRight="8dp"
         android:id="@+id/questionCount" />
 
 
@@ -40,9 +48,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/timeCounter"
-        android:layout_marginTop="19dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/customshape"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
         android:gravity="center"
-        android:text="This is Question \nThis is Question"
+        android:text="@string/this_is_question_nthis_is_question"
         android:textSize="20sp" />
 
     <RadioGroup
@@ -55,18 +66,23 @@
         <RadioButton
             android:id="@+id/radioButton1"
             android:layout_width="wrap_content"
+            android:background="@drawable/customshape"
             android:layout_height="wrap_content"
             android:text="Option 1"
             />
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="wrap_content"
+            android:layout_marginTop="8dp"
             android:layout_height="wrap_content"
+            android:background="@drawable/customshape"
             android:text="Option 2"
             />
         <RadioButton
             android:id="@+id/radioButton3"
             android:layout_width="wrap_content"
+            android:background="@drawable/customshape"
+            android:layout_marginTop="8dp"
             android:layout_height="wrap_content"
             android:text="Option 2"
             />
@@ -78,11 +94,15 @@
         android:id="@+id/submitButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Submit"
+        android:text="@string/submit"
         android:layout_alignParentBottom="true"
-        android:background="@color/colorPrimary"
-        android:textColor="@android:color/white"
-        android:textSize="20sp"
+        android:background="@drawable/customshape"
+        android:textColor="#ffff"
+        android:backgroundTint="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="26dp"
         />
 
 </RelativeLayout>

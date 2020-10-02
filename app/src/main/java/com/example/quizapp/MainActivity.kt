@@ -14,9 +14,7 @@ import com.example.quizapp.R
 class MainActivity : AppCompatActivity() {
 
     private var txtHighScore: TextView? = null
-
     private var mhighscore: Int = 0
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,13 +23,13 @@ class MainActivity : AppCompatActivity() {
         txtHighScore = findViewById(R.id.highscore)
         loadHighScore()
 
-
         val startQuiz = findViewById<Button>(R.id.startButton)
         startQuiz.setOnClickListener {
             startActivityForResult(Intent(applicationContext, MainQuiz::class.java), REQUEST_CODE)
         }
     }
 
+    //Result activity method
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
@@ -45,6 +43,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    //updateScore method
     private fun updateScore(score: Int) {
         mhighscore = score
         txtHighScore!!.text = "My High Score:- $mhighscore"
@@ -56,6 +55,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    //High score method
     private fun loadHighScore() {
         val preferences = getSharedPreferences(PREFS, Context.MODE_PRIVATE)
         mhighscore = preferences.getInt(HIGH_SCORE, 0)
