@@ -156,18 +156,21 @@ class MainQuiz : AppCompatActivity() {
 
     }
 
+    var radioSelected : RadioButton? = null
 
     private fun check() {
         ans = true
 
         countDownTimer!!.cancel()
 
-        val radioSelected = findViewById<View>(radioGroup!!.checkedRadioButtonId) as RadioButton
-        val answer = radioGroup!!.indexOfChild(radioSelected) + 1
+        if(radioGroup!!.checkedRadioButtonId != -1) {
+            radioSelected = findViewById<View>(radioGroup!!.checkedRadioButtonId) as RadioButton
+            val answer = radioGroup!!.indexOfChild(radioSelected) + 1
 
-        if (answer == currQuestion!!.getmRightAns()) {
-            score++
-            txtScore!!.text = "Score: $score"
+            if (answer == currQuestion!!.getmRightAns()) {
+                score++
+                txtScore!!.text = "Score: $score"
+            }
         }
 
         showRightAns()
